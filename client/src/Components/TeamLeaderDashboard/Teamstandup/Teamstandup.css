@@ -1,0 +1,335 @@
+/* Simple CSS styles
+
+.teamstdcontainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #f8f8f8;
+}
+
+.teamstdheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.teamstdheader h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.teamstddate {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.teamstdicon {
+  margin-right: 4px;
+}
+
+.teamstdnavigation button {
+  padding: 8px 16px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+}
+
+.teamstdnavigation .active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.teamstdstandup-cards {
+  display: grid;
+  gap: 16px;
+}
+
+.teamstdcard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.teamstdcard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teamstduser-info {
+  display: flex;
+  align-items: center;
+}
+
+.teamstdonline {
+  color: #2d8a34;
+}
+
+.teamstdoffline {
+  color: #666;
+}
+
+.teamstdcard-details {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  color: #666;
+  margin: 8px 0;
+}
+
+.teamstdnotes {
+  background-color: #f2f2f2;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.teamstdactions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.teamstdapprove-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.teamstdreject-btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+} */
+
+
+
+/* Standup.css */
+.standup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.standup-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.date-info {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #f5a623;
+}
+
+.calendar-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+
+.tab-buttons {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #666;
+  background-color: transparent;
+  border: none;
+}
+
+.tab-button.active {
+  color: #4a90e2;
+  border-bottom: 2px solid #4a90e2;
+}
+
+.standup-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.standup-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.status.online {
+  /* background-color: #28a745; */
+  /* color: white; */
+}
+
+.status.offline {
+  /* background-color: #dc3545;
+  color: white; */
+}
+
+.standup-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.details-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.approve-btn,
+.reject-btn {
+  padding: 8px 15px;
+  margin-left: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.approve-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.review-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.review-table th, .review-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table-header th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.table-row:hover {
+  background-color: #f9f9f9;
+}
+
+.status-cell {
+  display: flex;
+  align-items: center;
+}
+
+.status-icon {
+  margin-right: 8px;
+}
+
+.green {
+  color: #28a745;
+}
+
+.red {
+  color: #dc3545;
+}
+
+.yellow {
+  color: #ffc107;
+}
+
+.status-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.status-btn.approved {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-btn.rejected {
+  background-color: #dc3545;
+  color: white;
+}
+
+.status-btn.pending {
+  background-color: #ffc107;
+  color: white;
+}
+
+.notes-cell .notes {
+  color: #555;
+  font-size: 14px;
+}

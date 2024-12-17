@@ -1,0 +1,137 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+} */
+
+
+.projecttop{
+    display: flex;
+}
+
+.projectsubtop{
+    width: 100%;
+    margin: 20px auto;
+}
+
+.projectcontainer {
+    font-family: Arial, sans-serif;
+    width: 94%;
+    margin: 20px auto;
+}
+
+.projectheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.projectheader h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.projectheader .projectactions {
+    display: flex;
+    align-items: center;
+}
+
+.projectheader .projectactions a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #4a90e2;
+    font-size: 14px;
+}
+
+.projectheader .projectactions .projectadd-customers {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.projectsearch-box {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.projectsearch-box input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.projectsearch-box input::placeholder {
+    color: #bbb;
+}
+
+.projectsearch-box .projectfa-search {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #bbb;
+}
+
+
+
+
+/* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+} */
+
+.projecttablecontainer {
+    font-family: 'Arial', sans-serif;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f6f8;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.projecttableuser-info {
+    display: flex;
+    align-items: center;
+}
+
+.projecttableuser-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+}

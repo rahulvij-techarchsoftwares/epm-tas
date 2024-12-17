@@ -1,0 +1,8 @@
+.superdiv{
+    display: flex;
+    justify-content: end;
+}
+
+.outer-section{
+    width: 90%;
+}
