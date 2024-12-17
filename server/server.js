@@ -13,7 +13,16 @@ const superadminroutes = require('./routes/superadminRoutes');
 const adminroutes = require('./routes/adminRoutes');
 // Initialize Express app
 const app = express();
-app.use(cors({ origin: 'http://localhost:3000' })); 
+const allowedOrigins = [
+    'http://localhost:3000', // Local development
+    'https://epm-tas-2.onrender.com' // Live frontend
+];
+
+app.use(cors({
+    origin: allowedOrigins,
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+}));
 app.use(express.json());
 
 app.use(authroutes);
